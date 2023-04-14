@@ -1,0 +1,83 @@
+.app-container {
+  background-color: var(--clr-neutral-white);
+  border-radius: 15px;
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+}
+
+.app-wrapper {
+  display: flex;
+  padding: 16px;
+}
+
+.left-col {
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: var(--clr-neutral-white);
+  padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 5.56rem;
+}
+
+.step-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.step {
+  border: 1px solid var(--clr-neutral-white);
+  padding: 6px 10px;
+  border-radius: 50%;
+  line-height: 16px;
+}
+
+.active-step {
+  background-color: var(--clr-primary-blue-light);
+  color: var(--clr-primary-blue);
+  border: 1px solid var(--clr-primary-blue-light);
+}
+
+.step-number {
+  margin-right: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.step-text {
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: var(--clr-primary-blue-pastel);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.step-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.right-wrapper {
+  padding: 3.5rem 6.25rem;
+}
+
+.app-title {
+  font-size: 2rem;
+  line-height: 37px;
+  font-weight: 700;
+  color: var(--clr-primary-blue);
+  margin-bottom: 0.69rem;
+}
+
+.app-text {
+  line-height: 25px;
+  color: var(--clr-neutral-cool-gray);
+  margin-bottom: 2.5rem;
+  line-height: 25px;
+}
+
+/* ------------------------------- */

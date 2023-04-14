@@ -1,0 +1,46 @@
+.personal-wrapper {
+  padding: 3.5rem 6.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin-bottom: 5.75rem;
+}
+
+form label {
+  font-size: 0.875rem;
+  line-height: 16px;
+  color: var(--clr-primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  border: 1px solid var(--clr-neutral-gray-light);
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--clr-primary-blue);
+  color: var(--clr-neutral-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  float: right;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-blue-purple);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}

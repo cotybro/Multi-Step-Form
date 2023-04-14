@@ -1,0 +1,38 @@
+.addons-wrapper {
+  padding: 3.5rem 6.25rem 2rem;
+}
+
+.addon {
+  display: flex;
+  align-items: center;
+  padding: 1.125rem 1.5rem;
+  border: 1px solid var(--clr-neutral-gray-light);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.addons-container {
+  margin-bottom: 5rem;
+  width: 450px;
+}
+
+input[type='checkbox'] {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  scale: 1.25;
+}
+
+.active-checkbox {
+  border: 1px solid var(--clr-primary-blue-purple);
+  background-color: var(--clr-neutral-very-light-grey);
+}
+
+.addon-title {
+  line-height: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.addon-end {
+  margin-left: auto;
+}
