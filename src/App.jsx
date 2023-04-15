@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Steps from './Component/Steps/Steps'
 import Personal from './Component/Personal-Info/Personal'
 import Plan from './Component/Plan/Plan'
@@ -8,16 +8,18 @@ import ThankYou from './Component/ThankYou/ThankYou'
 import './App.css'
 
 function App() {
+  const [step, setStep] = useState(1)
+
   return (
     <div className='app-container'>
       <div className='app-wrapper'>
-        <Steps />
+        <Steps step={step} />
         <div className='right-col'>
-          <Personal />
-          {/* <Plan /> */}
-          {/* <AddOns /> */}
-          {/* <Confirm /> */}
-          {/* <ThankYou /> */}
+          {step === 1 && <Personal setStep={setStep} />}
+          {step === 2 && <Plan setStep={setStep} />}
+          {step === 3 && <AddOns setStep={setStep} />}
+          {step === 4 && <Confirm setStep={setStep} />}
+          {step === 5 && <ThankYou setStep={setStep} />}
         </div>
       </div>
     </div>

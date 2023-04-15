@@ -4,7 +4,7 @@ import AdvancedImg from '../../assets/images/icon-advanced.svg'
 import ProImg from '../../assets/images/icon-pro.svg'
 import './Plan.css'
 
-function Plan() {
+function Plan({ setStep }) {
   return (
     <div className='plan-wrapper'>
       <h2 className='app-title'>Select your plan</h2>
@@ -39,14 +39,20 @@ function Plan() {
       </div>
       <div className='time-container'>
         <p className='time-text month active-time'>Monthly</p>
-        <label class='switch'>
+        <label className='switch'>
           <input type='checkbox' />
-          <span class='slider'></span>
+          <span className='slider'></span>
         </label>
         <p className='time-text year'>Yearly</p>
       </div>
-      <button className='back-btn'>Go Back</button>
-      <button className='btn' type='submit'>
+      <button className='back-btn' onClick={() => setStep((i) => i - 1)}>
+        Go Back
+      </button>
+      <button
+        className='btn'
+        type='submit'
+        onClick={() => setStep((i) => i + 1)}
+      >
         Next Step
       </button>
     </div>

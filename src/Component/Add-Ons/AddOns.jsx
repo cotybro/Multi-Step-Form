@@ -1,6 +1,6 @@
 import React from 'react'
 import './AddOns.css'
-function AddOns() {
+function AddOns({ setStep }) {
   return (
     <div className='addons-wrapper'>
       <h1 className='app-title'>Pick add-ons</h1>
@@ -41,8 +41,12 @@ function AddOns() {
           </div>
         </label>
       </div>
-      <button className='back-btn'>Go Back</button>
-      <button className='btn'>Next Step</button>
+      <button className='back-btn' onClick={() => setStep((i) => i - 1)}>
+        Go Back
+      </button>
+      <button className='btn' onClick={() => setStep((i) => i + 1)}>
+        Next Step
+      </button>
     </div>
   )
 }

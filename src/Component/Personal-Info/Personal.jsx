@@ -1,7 +1,7 @@
 import React from 'react'
 import './Personal.css'
 
-function Personal() {
+function Personal({ setStep }) {
   return (
     <div className='personal-wrapper'>
       <h1 className='app-title'>Personal info</h1>
@@ -26,7 +26,12 @@ function Personal() {
           required
         />
       </form>
-      <button className='btn' type='submit' form='form'>
+      <button
+        className='btn'
+        type='submit'
+        form='form'
+        onClick={() => setStep((i) => i + 1)}
+      >
         Next Step
       </button>
     </div>
