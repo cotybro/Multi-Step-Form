@@ -80,4 +80,40 @@
   line-height: 25px;
 }
 
+.btn {
+  background-color: var(--clr-primary-blue);
+  color: var(--clr-neutral-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  float: right;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-blue-purple);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.back-btn {
+  background-color: var(--clr-neutral-white);
+  border: none;
+  color: var(--clr-neutral-cool-gray);
+  margin-top: 0.9rem;
+  font-weight: 700;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* ------------------------------- */

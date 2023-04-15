@@ -1,0 +1,89 @@
+.confirm-wrapper {
+  padding: 2rem 5.25rem;
+}
+
+.confirm-info-wrapper {
+  width: 450px;
+}
+
+.inside-wrapper {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.confirm-col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inside-wrapper {
+  background-color: var(--clr-neutral-very-light-grey);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-line {
+  border-bottom: 1px solid var(--clr-neutral-gray-light);
+}
+
+.confirm-info-plan {
+  color: var(--clr-primary-blue);
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-weight: 700;
+  color: var(--clr-primary-blue);
+}
+
+.change-plan {
+  background-color: transparent;
+  border: none;
+  color: var(--clr-neutral-cool-gray);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.change-plan:hover {
+  cursor: pointer;
+}
+
+.confirm-addons-text {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-cool-gray);
+}
+
+.confirm-addons-price {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-blue);
+}
+
+.col-top {
+  margin: 1rem 0;
+}
+
+.col-bottom {
+  margin: 0 1.5rem;
+  margin-bottom: 8rem;
+}
+
+.confirm-total-text {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-cool-gray);
+}
+
+.confirm-total-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clr-primary-blue-purple);
+}
+
+.accent-btn {
+  background-color: var(--clr-primary-blue-purple);
+}
+
+.accent-btn:hover {
+  background-color: var(--clr-primary-blue-pastel);
+}

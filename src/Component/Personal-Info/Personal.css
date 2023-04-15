@@ -1,5 +1,5 @@
 .personal-wrapper {
-  padding: 3.5rem 6.25rem;
+  padding: 2rem 5.25rem;
 }
 
 form {
@@ -23,24 +23,6 @@ form input {
   margin-bottom: 1.5rem;
 }
 
-.btn {
-  background-color: var(--clr-primary-blue);
-  color: var(--clr-neutral-white);
-  border: none;
-  border-radius: 8px;
-  padding: 0.875rem 1.5rem;
-  font-size: 0.875rem;
-  line-height: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  float: right;
-}
-
-.btn:hover {
-  background-color: var(--clr-primary-blue-purple);
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
+/* input[type='text']:invalid {
+  border: 1px solid var(--clr-primary-strawberry-red);
+} */

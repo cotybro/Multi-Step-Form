@@ -17,6 +17,7 @@ function Plan() {
             <img src={ArcadeImg} alt='Arcade Plan' className='card-img' />
             <h3 className='plan-card-title'>Arcade</h3>
             <p className='plan-card-price'>$9/mo</p>
+            {/* <p className='plan-card-year'>2 months free</p> */}
           </div>
         </div>
         <div className='plan-card'>
@@ -24,6 +25,7 @@ function Plan() {
             <img src={AdvancedImg} alt='Advanced Plan' className='card-img' />
             <h3 className='plan-card-title'>Advanced</h3>
             <p className='plan-card-price'>$12/mo</p>
+            {/* <p className='plan-card-year'>2 months free</p> */}
           </div>
         </div>
         <div className='plan-card'>
@@ -31,6 +33,7 @@ function Plan() {
             <img src={ProImg} alt='Pro Plan' className='card-img' />
             <h3 className='plan-card-title'>Pro</h3>
             <p className='plan-card-price'>$15/mo</p>
+            {/* <p className='plan-card-year'>2 months free</p> */}
           </div>
         </div>
       </div>
@@ -43,7 +46,9 @@ function Plan() {
         <p className='time-text year'>Yearly</p>
       </div>
       <button className='back-btn'>Go Back</button>
-      <button className='btn'>Next Step</button>
+      <button className='btn' type='submit'>
+        Next Step
+      </button>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import './AddOns.css'
 function AddOns() {
   return (
     <div className='addons-wrapper'>
-      <h1 className='app-title'>Pick add-Ons</h1>
+      <h1 className='app-title'>Pick add-ons</h1>
       <p className='app-text'>Add-ons help enhance your gaming experience.</p>
       <div className='addons-container'>
         <label className='addon active-checkbox'>

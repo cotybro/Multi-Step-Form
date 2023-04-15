@@ -1,5 +1,5 @@
 .plan-wrapper {
-  padding: 3.5rem 6.25rem 2rem;
+  padding: 3.5rem 5.25rem 2rem;
 }
 
 .plan-container {
@@ -8,12 +8,13 @@
 }
 
 .plan-card-wrapper {
-  padding: 1.25rem 4.31rem 1rem 1rem;
+  width: 77px;
 }
 
 .plan-card {
   border: 1px solid var(--clr-neutral-gray-light);
   border-radius: 8px;
+  padding: 1.25rem 4rem 1rem 1rem;
 }
 
 .plan-card:hover {
@@ -32,6 +33,16 @@
   line-height: 18.38px;
   color: var(--clr-primary-blue);
   margin-bottom: 0.438rem;
+}
+
+.plan-card-price {
+  font-size: 0.875rem;
+  color: var(--clr-neutral-cool-gray);
+}
+
+.plan-card-year {
+  font-size: 0.75rem;
+  color: var(--clr-primary-blue);
 }
 
 .active-card {
@@ -104,17 +115,4 @@
 
 input:checked + .slider:before {
   transform: translateX(18px);
-}
-
-.back-btn {
-  background-color: var(--clr-neutral-white);
-  border: none;
-  color: var(--clr-neutral-cool-gray);
-  margin-top: 0.9rem;
-}
-
-.back-btn:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }

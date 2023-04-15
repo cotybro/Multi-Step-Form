@@ -2,6 +2,8 @@ import React from 'react'
 import Personal from './Component/Personal-Info/Personal'
 import Plan from './Component/Plan/Plan'
 import AddOns from './Component/Add-Ons/AddOns'
+import Confirm from './Component/Confirm/Confirm'
+import ThankYou from './Component/ThankYou/ThankYou'
 import './App.css'
 
 function App() {
@@ -49,7 +51,9 @@ function App() {
         <div className='right-col'>
           {/* <Personal /> */}
           {/* <Plan /> */}
-          <AddOns />
+          {/* <AddOns /> */}
+          {/* <Confirm /> */}
+          <ThankYou />
         </div>
       </div>
     </div>
