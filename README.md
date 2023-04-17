@@ -36,12 +36,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![FireShot Capture 002 - Multi-step Form - localhost](https://user-images.githubusercontent.com/36529826/232561330-d6e3616d-b644-4e29-a4f6-9afa52125a6c.png)
 
 ### Links
 
 - Solution URL: [solution here](https://github.com/cotybro/Multi-Step-Form)
-- Live Site URL: [live site here](https://your-live-site-url.com)
+- Live Site URL: [live site here](https://multi-step-form-jade.vercel.app/)
 
 ## My process
 
