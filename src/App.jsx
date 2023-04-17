@@ -13,10 +13,10 @@ function App() {
     email: '',
     phone: '',
   })
-  const [step, setStep] = useState(2)
+  const [step, setStep] = useState(1)
   const [plan, setPlan] = useState('')
   const [time, setTime] = useState(false)
-  const [price, setPrice] = useState(9)
+  const [price, setPrice] = useState(0)
   const [totalPrice, setTotalPrice] = useState(0)
   const [addons, setAddons] = useState({
     onlineService: false,
