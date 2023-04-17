@@ -32,7 +32,7 @@ function App() {
       <div className='app-wrapper'>
         <Steps step={step} />
         <div className='right-col'>
-          {step === 1 && <Personal setStep={setStep} setInfo={setInfo} />}
+          {step === 1 && <Personal setStep={setStep} />}
           {step === 2 && (
             <Plan
               setStep={setStep}

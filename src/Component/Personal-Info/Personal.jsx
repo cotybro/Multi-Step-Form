@@ -1,7 +1,7 @@
 import React from 'react'
 import './Personal.css'
 
-function Personal({ setStep, setInfo }) {
+function Personal({ setStep }) {
   const handleNextClick = () => {
     const nameInput = document.getElementById('name')
     const emailInput = document.getElementById('email')
