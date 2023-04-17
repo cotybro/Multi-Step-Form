@@ -1,7 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Confirm.css'
 
-function Confirm() {
+function Confirm({
+  setStep,
+  plan,
+  price,
+  addons,
+  time,
+  totalPrice,
+  setTotalPrice,
+}) {
+  useEffect(() => {
+    setTotalPrice(price)
+  }, [price])
+
+  useEffect(() => {
+    let total = price
+    if (addons.onlineService) {
+      total += 1
+    }
+    if (addons.largerStorage) {
+      total += 2
+    }
+    if (addons.customizableProfile) {
+      total += 2
+    }
+    setTotalPrice(total)
+  }, [addons, price, setTotalPrice])
+
   return (
     <div className='confirm-wrapper'>
       <div className='confirm-container'>
@@ -13,28 +39,58 @@ function Confirm() {
           <div className='inside-wrapper'>
             <div className='confirm-col bottom-line'>
               <div className='confirm-top'>
-                <p className='confirm-info-plan'>Arcade (Monthly)</p>
-                <button className='change-plan'>Change</button>
+                <p className='confirm-info-plan'>
+                  {plan} ({time ? 'Yearly' : 'Monthly'})
+                </p>
+                <button className='change-plan' onClick={() => setStep(2)}>
+                  Change
+                </button>
               </div>
-              <p className='plan-price'>$9/mo</p>
+              <p className='plan-price'>${price}/mo</p>
             </div>
             <div className='confirm-col col-top'>
-              <p className='confirm-addons-text'>Online service</p>
-              <p className='confirm-addons-price'>+$1/mo</p>
+              {addons.onlineService ? (
+                <>
+                  <p className='confirm-addons-text'>Online service</p>
+                  <p className='confirm-addons-price'>+$1/mo</p>
+                </>
+              ) : null}
+            </div>
+            <div className='confirm-col col-top'>
+              {addons.largerStorage ? (
+                <>
+                  <p className='confirm-addons-text'>Larger storage</p>
+                  <p className='confirm-addons-price'>+$2/mo</p>
+                </>
+              ) : null}
             </div>
             <div className='confirm-col'>
-              <p className='confirm-addons-text'>Larger storage</p>
-              <p className='confirm-addons-price'>+$2/mo</p>
+              {addons.customizableProfile ? (
+                <>
+                  <p className='confirm-addons-text'>Customizable profile</p>
+                  <p className='confirm-addons-price'>+$2/mo</p>
+                </>
+              ) : null}
             </div>
           </div>
           <div className='confirm-col col-bottom'>
-            <p className='confirm-total-text'>Total (per month)</p>
-            <p className='confirm-total-price'>$12/mo</p>
+            <p className='confirm-total-text'>
+              Total (per {time ? 'year' : 'month'})
+            </p>
+            <p className='confirm-total-price'>
+              ${totalPrice}/{time ? 'yr' : 'mo'}
+            </p>
           </div>
         </div>
       </div>
-      <button className='back-btn'>Go Back</button>
-      <button className='btn accent-btn' type='submit'>
+      <button className='back-btn' onClick={() => setStep((i) => i - 1)}>
+        Go Back
+      </button>
+      <button
+        className='btn accent-btn'
+        type='submit'
+        onClick={() => setStep((i) => i + 1)}
+      >
         Confirm
       </button>
     </div>

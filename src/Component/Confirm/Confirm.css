@@ -13,6 +13,7 @@
 .confirm-col {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .inside-wrapper {
@@ -57,11 +58,7 @@
 
 .confirm-addons-price {
   font-size: 0.875rem;
-  color: var(--clr-neutral-blue);
-}
-
-.col-top {
-  margin: 1rem 0;
+  color: var(--clr-primary-blue);
 }
 
 .col-bottom {

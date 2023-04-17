@@ -52,10 +52,10 @@
   color: var(--clr-neutral-cool-gray);
   margin-top: 0.9rem;
   font-weight: 700;
+  line-height: 18px;
 }
 
 .back-btn:hover {
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  color: var(--clr-primary-blue);
 }
