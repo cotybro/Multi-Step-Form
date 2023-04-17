@@ -49,6 +49,7 @@
 
 .change-plan:hover {
   cursor: pointer;
+  color: var(--clr-primary-blue-purple);
 }
 
 .confirm-addons-text {

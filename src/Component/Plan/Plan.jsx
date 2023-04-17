@@ -60,9 +60,11 @@ function Plan({ setStep, setPlan, plan, setPrice, time, setTime }) {
         >
           <div className='plan-card-wrapper'>
             <img src={ArcadeImg} alt='Arcade Plan' className='card-img' />
-            <h3 className='plan-card-title'>Arcade</h3>
-            <p className='plan-card-price'>{time ? '$90/yr' : '$9/mo'}</p>
-            {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            <div className='plan-mobile'>
+              <h3 className='plan-card-title'>Arcade</h3>
+              <p className='plan-card-price'>{time ? '$90/yr' : '$9/mo'}</p>
+              {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            </div>
           </div>
         </div>
         <div
@@ -73,9 +75,11 @@ function Plan({ setStep, setPlan, plan, setPrice, time, setTime }) {
         >
           <div className='plan-card-wrapper'>
             <img src={AdvancedImg} alt='Advanced Plan' className='card-img' />
-            <h3 className='plan-card-title'>Advanced</h3>
-            <p className='plan-card-price'>{time ? '$120/yr' : '$12/mo'}</p>
-            {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            <div className='plan-mobile'>
+              <h3 className='plan-card-title'>Advanced</h3>
+              <p className='plan-card-price'>{time ? '$120/yr' : '$12/mo'}</p>
+              {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            </div>
           </div>
         </div>
         <div
@@ -84,9 +88,11 @@ function Plan({ setStep, setPlan, plan, setPrice, time, setTime }) {
         >
           <div className='plan-card-wrapper'>
             <img src={ProImg} alt='Pro Plan' className='card-img' />
-            <h3 className='plan-card-title'>Pro</h3>
-            <p className='plan-card-price'>{time ? '$150/yr' : '$15/mo'}</p>
-            {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            <div className='plan-mobile'>
+              <h3 className='plan-card-title'>Pro</h3>
+              <p className='plan-card-price'>{time ? '$150/yr' : '$15/mo'}</p>
+              {time ? <p className='plan-card-year'>2 months free</p> : ''}
+            </div>
           </div>
         </div>
       </div>

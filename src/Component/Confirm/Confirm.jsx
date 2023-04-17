@@ -17,13 +17,19 @@ function Confirm({
   useEffect(() => {
     let total = price
     if (addons.onlineService) {
-      total += 1
+      {
+        time ? (total += 10) : (total += 1)
+      }
     }
     if (addons.largerStorage) {
-      total += 2
+      {
+        time ? (total += 20) : (total += 2)
+      }
     }
     if (addons.customizableProfile) {
-      total += 2
+      {
+        time ? (total += 20) : (total += 2)
+      }
     }
     setTotalPrice(total)
   }, [addons, price, setTotalPrice])
@@ -52,7 +58,9 @@ function Confirm({
               {addons.onlineService ? (
                 <>
                   <p className='confirm-addons-text'>Online service</p>
-                  <p className='confirm-addons-price'>+$1/mo</p>
+                  <p className='confirm-addons-price'>
+                    +${time ? '10/yr' : '1/mo'}
+                  </p>
                 </>
               ) : null}
             </div>
@@ -60,7 +68,9 @@ function Confirm({
               {addons.largerStorage ? (
                 <>
                   <p className='confirm-addons-text'>Larger storage</p>
-                  <p className='confirm-addons-price'>+$2/mo</p>
+                  <p className='confirm-addons-price'>
+                    +${time ? '20/yr' : '1/mo'}
+                  </p>
                 </>
               ) : null}
             </div>
@@ -68,7 +78,9 @@ function Confirm({
               {addons.customizableProfile ? (
                 <>
                   <p className='confirm-addons-text'>Customizable profile</p>
-                  <p className='confirm-addons-price'>+$2/mo</p>
+                  <p className='confirm-addons-price'>
+                    +${time ? '20/yr' : '1/mo'}
+                  </p>
                 </>
               ) : null}
             </div>

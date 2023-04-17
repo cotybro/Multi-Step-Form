@@ -13,8 +13,8 @@ function App() {
     email: '',
     phone: '',
   })
-  const [step, setStep] = useState(1)
-  const [plan, setPlan] = useState('Arcade')
+  const [step, setStep] = useState(2)
+  const [plan, setPlan] = useState('')
   const [time, setTime] = useState(false)
   const [price, setPrice] = useState(9)
   const [totalPrice, setTotalPrice] = useState(0)
@@ -32,7 +32,7 @@ function App() {
       <div className='app-wrapper'>
         <Steps step={step} />
         <div className='right-col'>
-          {step === 1 && <Personal setStep={setStep} />}
+          {step === 1 && <Personal setStep={setStep} setInfo={setInfo} />}
           {step === 2 && (
             <Plan
               setStep={setStep}

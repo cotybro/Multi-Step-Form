@@ -1,7 +1,7 @@
 import React from 'react'
 import './Personal.css'
 
-function Personal({ setStep }) {
+function Personal({ setStep, setInfo }) {
   const handleNextClick = () => {
     const nameInput = document.getElementById('name')
     const emailInput = document.getElementById('email')
@@ -49,6 +49,11 @@ function Personal({ setStep }) {
 
     if (step === 3) {
       setStep((i) => i + 1)
+      setInfo({
+        name: nameInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+      })
     }
   }
 
@@ -92,7 +97,7 @@ function Personal({ setStep }) {
         />
       </form>
       <button
-        className='btn'
+        className='btn btn-personal'
         type='submit'
         form='form'
         onClick={handleNextClick}

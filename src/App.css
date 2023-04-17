@@ -59,3 +59,73 @@
   cursor: pointer;
   color: var(--clr-primary-blue);
 }
+
+@media screen and (max-width: 920px) {
+  .app-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left-col {
+    background-image: url(/src/assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 172px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 0;
+  }
+
+  .step-text,
+  .step-title {
+    display: none;
+  }
+
+  .step-number {
+    margin-right: 1.5rem;
+  }
+
+  .personal-wrapper,
+  .plan-wrapper,
+  .addons-wrapper,
+  .confirm-wrapper,
+  .thank-you-container {
+    padding: 2rem;
+  }
+
+  .btn-personal {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    margin-bottom: 1rem;
+  }
+
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .plan-card-wrapper {
+    display: flex;
+  }
+
+  .card-img {
+    margin-right: 0.875rem;
+  }
+
+  .plan-card {
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+  .plan-card:not(:last-child) {
+    margin-right: 0;
+  }
+}
